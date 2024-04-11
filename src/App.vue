@@ -3,12 +3,14 @@
   import AppHeader from './components/AppHeader.vue';
   import AppContentCentral from './components/AppContentCentral.vue';
   import AppCardSection from './components/AppCardSection.vue';
+  import AppFooterLink from './components/AppFooterLink.vue';
 
   export default {
     components: {
       AppHeader,
       AppContentCentral,
-      AppCardSection
+      AppCardSection,
+      AppFooterLink
     }
   }
   
@@ -21,6 +23,10 @@
 <AppContentCentral></AppContentCentral>
 <AppCardSection></AppCardSection>
 </main>
+
+<footer>
+<AppFooterLink></AppFooterLink>
+</footer>
 </template>
 
 <style lang="scss">
