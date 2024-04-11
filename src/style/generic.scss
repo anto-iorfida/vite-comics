@@ -14,9 +14,11 @@ img{
 }
 
 .container-small{
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
+
+// UTILITY
 
 .d-flex{
     display: flex;
@@ -26,8 +28,20 @@ img{
     justify-content: space-between;
 }
 
+.justify-around{
+    justify-content: space-around;
+}
+
 .align-center{
     align-items: center;
+}
+
+.gap-10{
+    gap: 10px;
+}
+
+.gap-5{
+    gap: 5px;
 }
 
 li{

@@ -58,7 +58,7 @@ export default {
             <img src="../assets/img/dc-logo.png" alt="logo">
         </div>
         <nav>
-            <ul class="d-flex ">
+            <ul class="d-flex gap-10 ">
                 <li class="d-flex align-center actives" v-for="link in links">{{ link.name }}</li>
             </ul>
         </nav>
@@ -74,7 +74,6 @@ export default {
             width: 80px;
         }
         ul{
-            gap: 10px;
         
             li{
                 height: 120px;
