@@ -4,13 +4,15 @@
   import AppContentCentral from './components/AppContentCentral.vue';
   import AppCardSection from './components/AppCardSection.vue';
   import AppFooterLink from './components/AppFooterLink.vue';
+  import AppFooterInfo from './components/AppFooterInfo.vue';
 
   export default {
     components: {
       AppHeader,
       AppContentCentral,
       AppCardSection,
-      AppFooterLink
+      AppFooterLink,
+      AppFooterInfo
     }
   }
   
@@ -26,6 +28,7 @@
 
 <footer>
 <AppFooterLink></AppFooterLink>
+<AppFooterInfo></AppFooterInfo>
 </footer>
 </template>
 

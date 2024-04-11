@@ -74,14 +74,13 @@ export default {
             width: 80px;
         }
         ul{
-        
             li{
                 height: 120px;
                 
             }
         }
         .actives{
-                    border-bottom: 4px solid $blu-primary;
+                    border-bottom: 8px solid $blu-primary;
                     color: $blu-primary;
                 }
         
