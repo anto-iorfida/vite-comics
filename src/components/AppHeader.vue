@@ -59,7 +59,7 @@ export default {
         </div>
         <nav>
             <ul class="d-flex ">
-                <li class="d-flex align-center " v-for="link in links">{{ link.name }}</li>
+                <li class="d-flex align-center actives" v-for="link in links">{{ link.name }}</li>
             </ul>
         </nav>
     </div>
@@ -67,6 +67,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../style/partials/variables' as*;
     .container{
         height: 120px;
         img{
@@ -80,9 +81,9 @@ export default {
                 
             }
         }
-
         .actives{
-                    border-bottom: 3px solid blue;
+                    border-bottom: 4px solid $blu-primary;
+                    color: $blu-primary;
                 }
         
     }
