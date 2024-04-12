@@ -9,10 +9,10 @@
 
 <template>
     <div class="card">
-        <div>
-            <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" >
+        <div class="contenitor-img">
+            <img :src="cardInfo.thumb" >
         </div>
-        <h4>miau</h4>
+        <h4>{{cardInfo.series}}</h4>
     </div>
 
 </template>
@@ -21,6 +21,22 @@
     .card{
         width: calc(100% / 6 - 20px);
         margin: 10px;
+        .contenitor-img{
+            height: 80%;
+            overflow: hidden;
+
+            img{
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+        
+        h4{
+            text-transform: uppercase;
+            color: lightgray;
+            margin-top: 20px;
+            font-size: small;
+        }
     }
 
 </style>
