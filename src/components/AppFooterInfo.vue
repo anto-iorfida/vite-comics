@@ -2,7 +2,7 @@
     export default {
 	name: 'AppFooterInfo',
     data(){
-         return{
+        return{
             iconSocial:[
                 {img:'footer-facebook.png'},
                 {img:'footer-periscope.png'},
@@ -11,7 +11,7 @@
                 {img:'footer-youtube.png'}
             ]
         
-         }
+        }
         },
         methods: {
             getImageUrl(name) {
@@ -48,12 +48,26 @@
                 border: 4px solid $blu-primary;
                 font-size: small;
                 color: white;
+                &:hover {
+                    transform: scale(1.3); 
+                    transition: transform 0.3s ease-in-out; 
+                    cursor: pointer;
+                }
             }
             div:last-child{
                 color: $blu-primary;
                 li{
+                    
                     img{
-                        height: 30px
+                        height: 30px;
+                        border-radius: 50%;
+                        
+                        &:hover {
+                            transform: scale(1.3); 
+                            transition: transform 0.3s ease-in-out; 
+                            border: 3px solid white;
+                            cursor: pointer;
+                        }
                     };
                 }
             }

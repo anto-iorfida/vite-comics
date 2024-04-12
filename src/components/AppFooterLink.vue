@@ -53,27 +53,30 @@
             <div>
                 <h4>DC COMICS</h4>
                 <ul>
-                    <li v-for="singleLink in dcComics">{{ singleLink.name }}</li>
+                    <li v-for="singleLink in dcComics"><a href="">{{ singleLink.name }}</a></li>
                 </ul>
             </div>
             <div>
                 <h4>SHOP</h4>
                 <ul>
-                    <li v-for="singleLink in shop">{{ singleLink.name }}</li>
+                    <li v-for="singleLink in shop"><a href="">{{ singleLink.name }}</a></li>
                 </ul>
             </div>
         </div>
         <div>
             <h4>DC</h4>
             <ul>
-                <li v-for="singleLink in dc">{{ singleLink.name }}</li>
+                <li v-for="singleLink in dc"><a href="">{{ singleLink.name }}</a></li>
             </ul>
         </div>
         <div>
             <h4>SITES</h4>
             <ul>
-                <li v-for="singleLink in sites">{{ singleLink.name }}</li>
+                <li v-for="singleLink in sites"><a href="">{{ singleLink.name }}</a></li>
             </ul>
+        </div>
+        <div>
+            <img src="../assets/img/dc-logo-bg.png" alt="">
         </div>
     </div>
 </section>
@@ -81,8 +84,13 @@
 
 <style lang="scss" scoped>
     section{
+        height: 400px;
         padding: 20px 0;
         background-image: url('../assets/img/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        
         h4{
             color: white;
             font-size:medium;
@@ -93,7 +101,16 @@
                 color: gray;
                 font-size: small;
                 margin: 6px 0;
+                &:hover{
+                    color: white;
+                }
             }
+        }
+        img{
+            width: 500px;
+            position: relative;
+            bottom: 54px;
+            right: -160px;
         }
     }
 </style>

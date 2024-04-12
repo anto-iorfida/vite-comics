@@ -1,9 +1,10 @@
 <script>
+
 export default {
 	name: 'AppCardSection',
     data(){
         return{
-           cards:[
+            cards:[
             {
                 name:'DIGITAL COMICS',
                 img: 'buy-comics-digital-comics.png'
@@ -63,6 +64,11 @@ export default {
                 }
                 img{
                     width: 30px;
+                }
+                &:hover {
+                    transform: scale(1.3); 
+                    transition: transform 0.3s ease-in-out; 
+                    cursor: pointer;
                 }
             }
         }

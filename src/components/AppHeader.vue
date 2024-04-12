@@ -44,10 +44,17 @@ export default {
                         name: 'SHOP',
                         active: false
                     }
-                ]
-
+                ],
+                activeLink : 0,
+                
             }
-        } 
+            
+        },
+        methods: {
+            getActive(indice) {
+                this.activeLink = indice;
+            },
+        }
 }
 </script>
 
@@ -59,7 +66,11 @@ export default {
         </div>
         <nav>
             <ul class="d-flex gap-10 ">
-                <li class="d-flex align-center actives" v-for="link in links">{{ link.name }}</li>
+                <li 
+                :class="{'actives' : index === activeLink }" 
+                @click="getActive(index)"
+                class="d-flex align-center " 
+                v-for="(link,index) in links">{{ link.name }}</li>
             </ul>
         </nav>
     </div>
@@ -76,13 +87,12 @@ export default {
         ul{
             li{
                 height: 120px;
-                
             }
         }
-        .actives{
-                    border-bottom: 8px solid $blu-primary;
-                    color: $blu-primary;
-                }
+        .actives {
+            border-bottom: 8px solid $blu-primary;
+            color: $blu-primary;
+        }
         
     }
 </style>
