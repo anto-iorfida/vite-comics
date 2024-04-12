@@ -21,6 +21,7 @@
     }
 </script>
 
+<!-- section whit info and icon social -->
 <template>
     <section>
         <div class="container d-flex justify-between">

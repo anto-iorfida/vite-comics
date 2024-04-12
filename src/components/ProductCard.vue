@@ -1,12 +1,14 @@
 <script>
     export default {
         name: "ProductCard",
+        // props object in AppContentCentral
         props:{
             cardInfo: Object
         }
     } 
 </script>
 
+<!-- single card in AppContentCenter -->
 <template>
     <div class="card">
         <div class="contenitor-img">
@@ -14,15 +16,20 @@
         </div>
         <h4>{{cardInfo.series}}</h4>
     </div>
-
 </template>
 
+<!--scss single card in AppContentCenter -->
 <style lang="scss" scoped>
     .card{
         width: calc(100% / 6 - 20px);
         margin: 10px;
+        &:hover {
+                    transform: scale(1.1); 
+                    transition: transform 0.3s ease-in-out; 
+                    cursor: pointer;
+                }
         .contenitor-img{
-            height: 80%;
+            height: 70%;
             overflow: hidden;
 
             img{
@@ -36,6 +43,7 @@
             color: lightgray;
             margin-top: 20px;
             font-size: small;
+            font-weight: 400;
         }
     }
 

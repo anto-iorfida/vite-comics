@@ -8,6 +8,7 @@ export default {
     },
     data(){
         return{
+            // object props cardInfo
             cards:[
                 {
                     "thumb": "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
@@ -87,12 +88,15 @@ export default {
 }
 </script>
 
+<!-- Section with card cinema  -->
 <template>
     <section class="bg-image">
         
     </section>
     <section>
-        <span class="current-series btn">CURRENT SERIE</span>
+        <div class="container">
+            <span class="current-series btn ">CURRENT SERIE</span>
+        </div>
         <div class="container d-flex justify-center">
             <ProductCard v-for="card in cards" :cardInfo="card"></ProductCard>
             <button class="btn">LOAD MORE</button>
@@ -110,7 +114,7 @@ export default {
         background-color: $blu-primary;
     }
     .bg-image{
-        min-height: 250px;
+        min-height: 280px;
         background-image: url('../assets/img/jumbotron.jpg');
         background-position: top;
         background-size: cover;
@@ -121,7 +125,8 @@ export default {
         .current-series{
             position: relative;
             bottom: 30px;
-            
+            font-size:x-large;
+            font-weight: bold;
         }
         .container{
             flex-wrap: wrap;

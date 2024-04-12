@@ -46,6 +46,7 @@
     }
 </script>
 
+<!-- section  whit link-->
 <template>
 <section >
     <div class="container d-flex gap-20">
